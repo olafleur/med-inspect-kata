@@ -4,11 +4,17 @@ Ce kata a pour but de pratiquer différentes techniques de refactoring à partir
 
 ## Instructions
 
-Votre mission est d'ajouter une à une les fonctionnalités listées ci-dessous (tout en conservant les comportements de base) sans jamais briser aucun des tests existants. Pour valider que vous ne brisez aucun tests, vous pouvez exécuter le script `watch-tests` (dans le dossier du projet) qui exécutera tous les tests après chaque modification au code.
+Votre mission est d'ajouter une à une les fonctionnalités listées ci-dessous (tout en conservant les comportements de base) sans jamais briser aucun des tests existants. N'essayez pas de réfléchir d'avance à un design qui pourrait satisfaire toutes les exigences du premier coup. Faites l'effort d'implémenter chaque étape les unes après les autres dans le but d'intégrer continuellement de petits changements et pratiquer les techniques refactoring.
+
+Le code que vous produisez doit avoir un minimum de duplication (aucune si possible) et doit respecter au maximum les principes SOLID. Idéalement, les nouvelles fonctionnalités devraient être testées adéquatement.
+
+En aucun cas vous ne pouvez modifier du code existant en même temps que vous ajoutez une nouvelle fonctionnalité ou une nouvelle règle. Si vous devez modifier du code, annulez vos changements, faites la modification, _commit_ la modification et seulement après vous pourrez implémenter la nouvelle fonctionnalité.
+
+Faites de petits commits. Idéalement après chaque petite modification ou petite règle ajoutée.
+
+Pour valider que vous ne brisez aucun tests, vous pouvez exécuter le script `watch-tests` (dans le dossier du projet) qui exécutera tous les tests après chaque modification au code.
 
 Si vous brisez un test (erreur de compilation ou test échoué), annulez vos derniers changements avec `reset-changes`. Ce script annule tous les changements qui n'ont pas été _commit_ avec git.
-
-Si vous devez modifier du code, annulez vos changements, faites la modification, _commit_ la modification et seulement après vous pourrez implémenter la nouvelle fonctionnalité.
 
 ## Comportements de base
 
