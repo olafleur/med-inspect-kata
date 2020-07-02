@@ -37,6 +37,15 @@ namespace Inspection.Tests
     }
 
     [TestMethod]
+    public void Status_ShouldBeToBeInspected_WhenNextInspectionDueDateIsNow()
+    {
+      var nextInspectionDueDate = A_DATE;
+      var defibrillator = new Defibrillator(1, nextInspectionDueDate);
+
+      defibrillator.Status.Should().Be(DefibrillatorStatus.TO_BE_INSPECTED);
+    }
+
+    [TestMethod]
     public void Inspect_ShouldMoveNextInspectionDueDateInOneMonth() {
       var defibrillator = new Defibrillator(1, A_DATE);
 
